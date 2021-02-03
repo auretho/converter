@@ -3,6 +3,11 @@
     height: 60%;
     margin: auto;
     background-color: rgb(121, 199, 213);
+    border: 1px solid #fff;
+
+    &-hidden{
+        display: none;
+    }
 
     &-title{
         padding: .8em 1em;

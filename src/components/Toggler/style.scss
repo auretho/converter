@@ -1,0 +1,27 @@
+.toggler{
+    position: relative;
+    z-index: 1;
+    margin: -23px auto;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #00A3BF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &-button-open, &-button-closed{
+        background-color: transparent;
+        border: none;
+        font-style: inherit;
+        font-size: 2em;
+        color: #fff;
+        outline: 0;
+    }
+
+    &-button-closed{
+        transform: rotate(90deg);
+    }
+}

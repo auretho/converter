@@ -26,7 +26,7 @@ const Header = ({amount, result, inputChange, handleAmountSubmit}) => {
     <div className="header">
         <h1 className="header-title">Converter</h1>
             <form className="header-wrapper" action="" onSubmit={handleSubmit}>
-                <input className="header-amount" name="amount" type="number" placeholder="montant" value={amount} onChange={handleChange} />
+                <input className="header-amount" name="amount" type="number" placeholder="0" value={amount} onChange={handleChange} />
                 <h2 className="header-subtitle">euro</h2>
             </form>
     </div>

@@ -1,7 +1,6 @@
-import { INPUT_CHANGE, AMOUNT_SUBMIT } from '../actions/userActions';
+import { INPUT_CHANGE, AMOUNT_SUBMIT, ON_TOGGLE } from '../actions/userActions';
 const initialState = {
     amount: "",
-    currency: "",
 };
 
 const user = (state = initialState, action = {}) => {
@@ -15,6 +14,7 @@ const user = (state = initialState, action = {}) => {
             return{
                 ...state,
             };
+
         // case ON_TOGGLE:
         //     return{
         //         ...state,
