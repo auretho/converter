@@ -15,7 +15,15 @@
         border: none;
         font-style: inherit;
         font-size: 1em;
-        width: 90%;
+        // width: 90%;
+    }
+
+    &-title:focus{
+        outline: none;
+    }
+
+    &-title:focus::placeholder{
+        color: transparent;
     }
 
     &-list{
