@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Header from '../components/Header';
-import { inputChange, amountSubmit } from '../actions/userActions';
+import { inputChange, amountSubmit, fetchCurrencies } from '../actions/userActions';
 
 const mapState = (state) => ({
     amount: state.user.amount,
@@ -14,6 +14,10 @@ const mapDispatch = (dispatch) => ({
 
     handleAmountSubmit: () => {
         dispatch(amountSubmit())
+    },
+
+    fetchCurrencies: () => {
+        dispatch(fetchCurrencies())
     },
 });
 

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../../containers/Header';
 import Toggler from '../Toggler';
-import Main from '../Main';
+import Main from '../../containers/Main';
 import Footer from '../../containers/Footer';
 
 import './style.css';

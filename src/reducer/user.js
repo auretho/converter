@@ -1,6 +1,8 @@
-import { INPUT_CHANGE, AMOUNT_SUBMIT, ON_TOGGLE } from '../actions/userActions';
+import { INPUT_CHANGE, AMOUNT_SUBMIT, FETCH_CURRENCIES_SUCCESS, FETCH_CURRENCIES_ERROR } from '../actions/userActions';
 const initialState = {
     amount: "",
+    currencies: [],
+    filter:"",
 };
 
 const user = (state = initialState, action = {}) => {
@@ -15,11 +17,17 @@ const user = (state = initialState, action = {}) => {
                 ...state,
             };
 
-        // case ON_TOGGLE:
-        //     return{
-        //         ...state,
-        //     opened: !state.opened,
-        //     }
+        case FETCH_CURRENCIES_SUCCESS:
+            return {
+                ...state,
+                currencies: action.payload,
+                
+            };
+            
+        case FETCH_CURRENCIES_ERROR:
+            return {
+            ...state,
+        };
         default:
             return state;
     }

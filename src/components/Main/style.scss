@@ -11,7 +11,11 @@
 
     &-title{
         padding: .8em 1em;
-        font-weight: bold;
+        background-color: transparent;
+        border: none;
+        font-style: inherit;
+        font-size: 1em;
+        width: 90%;
     }
 
     &-list{
